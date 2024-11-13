@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace aula3
+{
+    internal class Program
+    {
+        static void Main(string [] args)
+        {
+          Guid guid = Guid.NewGuid();
+            string myGui = guid.ToString();
+            string[] guidBroke = myGui.Split('-');
+
+            foreach (var item in guidBroke)
+            {
+                Console.WriteLine(item);
+            }
+            
+
+            
+        }
+    }
+}
